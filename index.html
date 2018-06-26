@@ -1,13 +1,6 @@
 <!DOCTYPE html><head>
 <script
    <script src="jquery-3.3.1.min.js"></script>
-<script>
-
-    $(document).ready(function(){
-    $('#div1').text(language.date);
-    });
-
-    </script>
 	<script src="main.js"></script>
 <script src="svg-injector.min.js"></script>
 <script>
@@ -27,11 +20,10 @@ localStorage.setItem('language', lang);
 <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no">
 </head>
 <html>
-	
-
-<button type="button" class="langswitch" id="english" onclick="setLanguage('en')">Eng</button>
-<button type="button" class="langswitch" id="japanese" onclick="setLanguage('jp')">Jp</button>
-	
+	<div>
+<button type="button" class="langswitch" onclick="setLanguage('en')">Eng</button>
+<button type="button" class="langswitch"  onclick="setLanguage('jp')">Jp</button>
+	</div>
 <link href="./style.css" type="text/css" rel="stylesheet">
 	<title>logo</title>
 	<body class="main">
@@ -109,7 +101,7 @@ localStorage.setItem('language', lang);
 
 		<br />
 		<p>
-	<button type="button" class="buttons" onclick="alert('Woah it works!')">language.work</button>
+	<button type="button" class="buttons" onclick="alert('Woah it works!')">work</button>
 	<button type="button" class="buttons" onclick="alert('Woah it works!')">About</button>
 		</p>
 		<br />
