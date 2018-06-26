@@ -1,17 +1,15 @@
-<!DOCTYPE html><head>
-<script
-   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-	<script src="main.js"></script>
-<script src="svg-injector.min.js"></script>
-</head>
-<html>
-	
-<link href="./style.css" type="text/css" rel="stylesheet">
-	<title>logo</title>
-	<body class="main">
-	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 275 175" style="enable-background:new 0 0 275 175;" xml:space="preserve">
-
+<style type="text/css">
+	.st0{fill:none;stroke:#EE2148;stroke-width:25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#EE2148;stroke-width:21;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	
+		.st2{fill:none;stroke:#EE2148;stroke-width:25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:50;}
+	.st3{fill:none;stroke:#EE2148;stroke-width:50;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#000000;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
 <g id="primary">
 	<line class="st0" x1="132.5" y1="129.5" x2="132.5" y2="129.5"/>
 	<line class="st0" x1="120" y1="54.5" x2="120" y2="54.5"/>
@@ -80,18 +78,3 @@
 	<path class="st4" d="M82.5,105.911c-27.362-6.438-40.632,10.336-39.808,26.411c0.776,15.135,14.045,29.651,39.808,23.589"/>
 </g>
 </svg>
-
-		<br />
-		<p>
-	<button type="button" class="buttons" onclick="alert('Hello world!')">Work</button>
-	<button type="button" class="buttons" onclick="alert('Hello world!')">About</button>
-		</p>
-		<br />
-		<p>
-	<button type="button" class="buttons" onclick="alert('Hello world!')">Not Work</button>
-	<button type="button" class="buttons" onclick="alert('Hello world!')">Contact</button>
-		</p>
-</body>
-
-
-</html>	
