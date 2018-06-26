@@ -3,105 +3,21 @@
    <script src="jquery-3.3.1.min.js"></script>
 	<script src="main.js"></script>
 <script src="svg-injector.min.js"></script>
-<script>
-var language; 
-function getLanguage() {
-(localStorage.getItem('language') == null) ? setLanguage('en') : false;
-$.ajax({ 
-url:  '/language/' +  localStorage.getItem('language') + '.json', 
-dataType: 'json', async: false, dataType: 'json', 
-success: function (lang) { language = lang } });
-}
-
-function setLanguage(lang) {
-localStorage.setItem('language', lang);
-}
-</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no">
 </head>
 <html>
 	<div>
-<button type="button" class="langswitch" onclick="setLanguage('en')">Eng</button>
-<button type="button" class="langswitch"  onclick="setLanguage('jp')">Jp</button>
+<button type="button" class="langswitch" onclick="setLanguage('en')">JP</button>
+<button type="button" class="langswitch"  onclick="setLanguage('jp')">ENG</button>
 	</div>
 <link href="./style.css" type="text/css" rel="stylesheet">
 	<title>logo</title>
 	<body class="main">
-	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 275 175" style="enable-background:new 0 0 275 175;" xml:space="preserve">
-
-<g id="primary">
-	<line class="st0" x1="132.5" y1="129.5" x2="132.5" y2="129.5"/>
-	<line class="st0" x1="120" y1="54.5" x2="120" y2="54.5"/>
-	<line class="st0" x1="107.5" y1="104.5" x2="107.5" y2="154.5"/>
-	<line class="st0" x1="145" y1="17" x2="145" y2="67"/>
-	<line class="st1" x1="171" y1="67" x2="171.01" y2="67"/>
-	<line class="st2" x1="157.5" y1="129.5" x2="182.5" y2="154.5"/>
-	<line class="st2" x1="195.01" y1="54.5" x2="220.01" y2="79.5"/>
-	<line class="st3" x1="220" y1="142" x2="220" y2="142"/>
-	<polyline class="st0" points="48,17 48,67 98,17 	"/>
-	<path class="st0" d="M82.5,105.911c-53.125-12.5-53.125,62.5,0,50"/>
-</g>
-<g id="secondary">
-	<g>
-		<g>
-			<path d="M125,79.5c0-8.333,0-16.667,0-25c0-6.435-10-6.445-10,0c0,8.333,0,16.667,0,25C115,85.935,125,85.945,125,79.5L125,79.5z
-				"/>
-		</g>
-	</g>
-	<g>
-		<g>
-			<path d="M137.5,154.5c0-8.333,0-16.667,0-25c0-6.435-10-6.445-10,0c0,8.333,0,16.667,0,25
-				C127.5,160.935,137.5,160.945,137.5,154.5L137.5,154.5z"/>
-		</g>
-	</g>
-	<g>
-		<g>
-			<path d="M150,54.5c0-12.5,0-25,0-37.5c0-6.435-10-6.445-10,0c0,12.5,0,25,0,37.5C140,60.935,150,60.945,150,54.5L150,54.5z"/>
-		</g>
-	</g>
-	<g>
-		<g>
-			<path d="M102.5,117c0,12.5,0,25,0,37.5c0,6.435,10,6.445,10,0c0-12.5,0-25,0-37.5C112.5,110.565,102.5,110.555,102.5,117
-				L102.5,117z"/>
-		</g>
-	</g>
-	<g>
-		<g>
-			<path d="M162.817,82.024c4.17-8.333,8.34-16.667,12.51-25c-2.878,0-5.756,0-8.635,0c4.167,8.333,8.333,16.667,12.5,25
-				c2.878,5.757,11.507,0.698,8.635-5.047c-4.167-8.333-8.333-16.667-12.5-25c-1.632-3.264-7.002-3.262-8.635,0
-				c-4.17,8.333-8.34,16.667-12.51,25C151.311,82.715,159.934,87.786,162.817,82.024L162.817,82.024z"/>
-		</g>
-	</g>
-	<polyline class="st4" points="157.5,154.5 157.5,129.5 182.5,154.5 182.5,129.5 	"/>
-	<polyline class="st4" points="195.01,79.5 195.01,54.5 220.01,79.5 220.01,54.5 	"/>
-	<path class="st4" d="M220,129.5c-12.5,0-12.5,12.5-12.5,12.5s0,12.5,12.5,12.5"/>
-	<line class="st4" x1="220" y1="142" x2="232.5" y2="142"/>
-	<g>
-		<g>
-			<path d="M76.536,38.464c-8.333-8.333-16.667-16.667-25-25c-4.556-4.556-11.629,2.513-7.071,7.071
-				c8.333,8.333,16.667,16.667,25,25C74.021,50.092,81.094,43.023,76.536,38.464L76.536,38.464z"/>
-		</g>
-	</g>
-	<g>
-		<g>
-			<path d="M94.464,13.464c-8.333,8.333-16.667,16.667-25,25c-4.556,4.556,2.513,11.629,7.071,7.071
-				c8.333-8.333,16.667-16.667,25-25C106.092,15.979,99.023,8.906,94.464,13.464L94.464,13.464z"/>
-		</g>
-	</g>
-	<g>
-		<g>
-			<path d="M103,79.5c0-20.833,0-41.667,0-62.5c0-6.435-10-6.445-10,0c0,20.833,0,41.667,0,62.5C93,85.935,103,85.945,103,79.5
-				L103,79.5z"/>
-		</g>
-	</g>
-	<path class="st4" d="M82.5,105.911c-27.362-6.438-40.632,10.336-39.808,26.411c0.776,15.135,14.045,29.651,39.808,23.589"/>
-</g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 275 175"><style>.st0{fill:none;stroke:#EE2148;stroke-width:25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}.st2{fill:none;stroke:#EE2148;stroke-width:25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:50}.st4{fill:none;stroke:#000000;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}</style><g id="primary"><path class="st0" d="M132.5 129.5L132.5 129.5M120 54.5L120 54.5M107.5 104.5L107.5 154.5M145 17L145 67"/><path fill="none" stroke="#EE2148" stroke-width="21" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M171 67L171 67"/><path class="st2" d="M157.5 129.5L182.5 154.5M195 54.5L220 79.5"/><path fill="none" stroke="#EE2148" stroke-width="50" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M220 142L220 142"/><path class="st0" d="M48 17L48 67 98 17M82.5 105.911c-53.125-12.5-53.125 62.5 0 50"/></g><g id="secondary"><path d="M125 79.5c0-8.333 0-16.667 0-25 0-6.435-10-6.445-10 0 0 8.333 0 16.667 0 25C115 85.935 125 85.945 125 79.5L125 79.5zM137.5 154.5c0-8.333 0-16.667 0-25 0-6.435-10-6.445-10 0 0 8.333 0 16.667 0 25C127.5 160.935 137.5 160.945 137.5 154.5L137.5 154.5zM150 54.5c0-12.5 0-25 0-37.5 0-6.435-10-6.445-10 0 0 12.5 0 25 0 37.5C140 60.935 150 60.945 150 54.5L150 54.5zM102.5 117c0 12.5 0 25 0 37.5 0 6.435 10 6.445 10 0 0-12.5 0-25 0-37.5C112.5 110.565 102.5 110.555 102.5 117L102.5 117zM162.817 82.024c4.17-8.333 8.34-16.667 12.51-25-2.878 0-5.756 0-8.635 0 4.167 8.333 8.333 16.667 12.5 25 2.878 5.757 11.507.698 8.635-5.047-4.167-8.333-8.333-16.667-12.5-25-1.632-3.264-7.002-3.262-8.635 0-4.17 8.333-8.34 16.667-12.51 25C151.311 82.715 159.934 87.786 162.817 82.024L162.817 82.024z"/><path class="st4" d="M157.5 154.5L157.5 129.5 182.5 154.5 182.5 129.5M195.01 79.5L195.01 54.5 220.01 79.5 220.01 54.5M220 129.5c-12.5 0-12.5 12.5-12.5 12.5s0 12.5 12.5 12.5M220 142L232.5 142"/><path d="M76.536,38.464c-8.333-8.333-16.667-16.667-25-25c-4.556-4.556-11.629,2.513-7.071,7.071 c8.333,8.333,16.667,16.667,25,25C74.021,50.092,81.094,43.023,76.536,38.464L76.536,38.464z"/><path d="M94.464,13.464c-8.333,8.333-16.667,16.667-25,25c-4.556,4.556,2.513,11.629,7.071,7.071 c8.333-8.333,16.667-16.667,25-25C106.092,15.979,99.023,8.906,94.464,13.464L94.464,13.464z"/><path d="M103,79.5c0-20.833,0-41.667,0-62.5c0-6.435-10-6.445-10,0c0,20.833,0,41.667,0,62.5C93,85.935,103,85.945,103,79.5 L103,79.5z"/><path class="st4" d="M82.5,105.911c-27.362-6.438-40.632,10.336-39.808,26.411c0.776,15.135,14.045,29.651,39.808,23.589"/></g></svg>
 
 		<br />
 		<p>
-	<button type="button" class="buttons" onclick="alert('Woah it works!')">work</button>
+	<button type="button" class="buttons" onclick="alert('Woah it works!')">Work</button>
 	<button type="button" class="buttons" onclick="alert('Woah it works!')">About</button>
 		</p>
 		<br />
