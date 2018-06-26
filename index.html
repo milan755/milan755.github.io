@@ -1,13 +1,36 @@
-<!DOCTYPE html>
-
-<head>
+<!DOCTYPE html><head>
 <script
-   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+   <script src="jquery-3.3.1.min.js"></script>
+<script>
+
+    $(document).ready(function(){
+    $('#div1').text(language.date);
+    });
+
+    </script>
 	<script src="main.js"></script>
 <script src="svg-injector.min.js"></script>
+<script>
+var language; 
+function getLanguage() {
+(localStorage.getItem('language') == null) ? setLanguage('en') : false;
+$.ajax({ 
+url:  '/language/' +  localStorage.getItem('language') + '.json', 
+dataType: 'json', async: false, dataType: 'json', 
+success: function (lang) { language = lang } });
+}
+
+function setLanguage(lang) {
+localStorage.setItem('language', lang);
+}
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no">
 </head>
 <html>
+	
+
+<button type="button" class="langswitch" id="english" onclick="setLanguage('en')">Eng</button>
+<button type="button" class="langswitch" id="japanese" onclick="setLanguage('jp')">Jp</button>
 	
 <link href="./style.css" type="text/css" rel="stylesheet">
 	<title>logo</title>
@@ -86,7 +109,7 @@
 
 		<br />
 		<p>
-	<button type="button" class="buttons" onclick="alert('Woah it works!')">Work</button>
+	<button type="button" class="buttons" onclick="alert('Woah it works!')">language.work</button>
 	<button type="button" class="buttons" onclick="alert('Woah it works!')">About</button>
 		</p>
 		<br />
