@@ -80,3 +80,18 @@
 	margin-top:4%;
 		
 }
+.allbuttons {
+	
+	 -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.allbuttons:hover {
+background-color: #2B2224;
+color: #EA3661;
+}
+.allbuttons:active {
+  background-color: #33292B;
+color: #E84F7B;
+transform:scale(0.95,0.95);
+}
