@@ -95,3 +95,7 @@ color: #EA3661;
 color: #E84F7B;
 transform:scale(0.95,0.95);
 }
+
+body {
+    background-color: #AFC6C5;
+}
