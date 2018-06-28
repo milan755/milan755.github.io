@@ -37,8 +37,8 @@
 		</p>
 		<br />
 		<p>
-	<button type="button" class="buttons allbuttons" onclick="alert('Woah it works!')">Other</button>
-	<button type="button" class="buttons allbuttons" onclick="alert('I really need to stuff some stuff here')">Contact</button>
+	<button type="button" class="buttons allbuttons" onclick="alert('Under Construction')">Other</button>
+	<button type="button" class="buttons allbuttons" onclick="myFunction2()">Contact</button>
 		</p>
 </body>
 
@@ -55,9 +55,17 @@
 	  <div id="div1header" class="about">About</div>
 	<div type="button" class="paragraph1">
 		<p>Hello this a test please do not worry I have this all under control I swear one of these days I'll actually have this website done mark my words</p>
-		<button type="button" class="xbutton" onclick="myFunction()">X</button>
+		<div > <button type="button" class="xbutton" onclick="myFunction()">X</button> </div>
 	</div>
 </div>
+
+	<div id="div2">
+	  <div id="div2header" class="about">Contact</div>
+	<div type="button" class="paragraph1">
+		<p>Hello this once again a test please do not worry I have this all under control I swear one of these days I'll actually have this website done mark my words</p>
+		<div > <button type="button" class="xbutton" onclick="myFunction2()">X</button> </div>
+	</div>
+</div>	
 		
 <script>
 //Make the DIV element draggagle:
@@ -108,14 +116,73 @@ function dragElement(elmnt) {
 </script>	
 		<script>
 			function myFunction() {
-    var x = document.getElementById("div1").style.color = "blue";
+    var x = document.getElementById("div1");
 ;
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
+    if (x.style.display === "block") {
         x.style.display = "none";
+    } else {
+        x.style.display = "block";
     }
 }
 		</script>
 	
+	
+<script>
+//Make the DIV element draggagle:
+dragElement(document.getElementById("div2"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "div2header")) {
+    /* if present, the header is where you move the DIV from:*/
+    document.getElementById(elmnt.id + "div2header").onmousedown = dragMouseDown;
+  } else {
+    /* otherwise, move the DIV from anywhere inside the DIV:*/
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+	
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+	  
+  }
+
+  function closeDragElement() {
+    /* stop moving when mouse button is released:*/
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+</script>	
+		<script>
+			function myFunction2() {
+    var x = document.getElementById("div2");
+;
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+		</script>	
 </html>	
