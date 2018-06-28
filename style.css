@@ -141,6 +141,7 @@ user-select: none; /* Standard */
     border: none;
     color: #EE2148;
 	display:block;
+	margin-top: 40px;
 	
 	
 	
@@ -152,14 +153,17 @@ user-select: none; /* Standard */
 	min-width: 300px; 
 	min-length: 50px;
 	max-length: 500px;
-	margin-left: 2%;
 	font-family: "Arial";
     text-align: center;
     font-size: 15px;
 	 background-color: #000000;
     border: none;
     color: #FE2148;
-	margin:1px;
+	margin-top:10px;
+	margin-bottom:1000px;
+	margin-left: 10px;
+	margin-right:10px;
+	
 
 }
 .about {
