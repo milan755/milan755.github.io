@@ -56,6 +56,7 @@
 	<div type="button" class="paragraph1">
 		<p>Hello this a test please do not worry I have this all under control I swear one of these days I'll actually have this website done mark my words</p>
 		<div > <button type="button" class="xbutton" onclick="myFunction()">X</button> </div>
+		
 	</div>
 </div>
 
@@ -66,7 +67,9 @@
 		<div > <button type="button" class="xbutton" onclick="myFunction2()">X</button> </div>
 	</div>
 </div>	
-		
+<div id="darkness" class="square">
+	
+	</div>	
 <script>
 //Make the DIV element draggagle:
 dragElement(document.getElementById("div1"));
@@ -117,11 +120,18 @@ function dragElement(elmnt) {
 		<script>
 			function myFunction() {
     var x = document.getElementById("div1");
+	var y = document.getElementById("darkness");			
 ;
     if (x.style.display === "block") {
         x.style.display = "none";
+		y.style.display === "block" 
+        y.style.display = "none";
+
     } else {
         x.style.display = "block";
+		y.style.display = "block";
+	
+		
     }
 }
 		</script>
@@ -177,11 +187,15 @@ function dragElement(elmnt) {
 		<script>
 			function myFunction2() {
     var x = document.getElementById("div2");
+	var y = document.getElementById("darkness");
 ;
     if (x.style.display === "block") {
         x.style.display = "none";
+		y.style.display === "block" 
+        y.style.display = "none";
     } else {
         x.style.display = "block";
+		y.style.display = "block";
     }
 }
 		</script>	
