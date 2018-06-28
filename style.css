@@ -203,7 +203,7 @@ user-select: none; /* Standard */
 .square{
 
 	background-color: #000;
-	opacity:0.5;
+	opacity:0.9;
 	display:none;
 
 	max-width: 6020px;
