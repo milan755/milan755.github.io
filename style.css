@@ -82,8 +82,8 @@
 }
 .allbuttons {
 	
-	 -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
+	 -webkit-transition-duration: 0.5s; /* Safari */
+    transition-duration: 0.5s;
 }
 
 .allbuttons:hover {
@@ -102,17 +102,15 @@ body {
 
 #div1 {
 	
-	
+	float: left;
     position: absolute;
     z-index: 9;
-  
-   
+	margin-top: -70%;
 }
 
 #div1header {
 	border-radius: 10px;
-	
-    padding: 10px;
+	 padding: 10px;
     cursor: move;
 	float:top;
     z-index: 10;
