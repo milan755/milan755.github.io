@@ -7,28 +7,7 @@
 
 }
 
-@media only screen and (max-width : 674px ){
-    /* For mobile phones: */
-    body {
- 
-	 position: absolute;
-	right:8%;
-	left:5%;
-	margin:auto;
-    }
-}
-@media only screen and (max-width : 456px ){
-    /* For mobile phones: */
-    
-	body {
- 
-	 position: absolute;
-	right:-8%;
-	left:-10%;
-	margin:auto;
-    }
-	
-}
+
 
 .buttons {
 	margin-left: 1px;
@@ -105,7 +84,8 @@ display:none;
 	float: left;
     position: absolute;
     z-index: 9;
-
+	top: 30px;
+	left:200%;
 }
 
 #div1header {
@@ -122,6 +102,8 @@ display:none;
 	float: left;
     position: absolute;
     z-index: 9;
+    top: 30px;
+	left:200%;
 
 }
 
@@ -187,4 +169,33 @@ display:none;
 	
 
 
+}
+
+@media only screen and (max-width : 674px ){
+    /* For mobile phones: */
+    body {
+ 
+	 position: absolute;
+	right:8%;
+	left:5%;
+	margin:auto;
+		
+    }
+	#media {
+	 top: 10%;	
+	}
+}
+@media only screen and (max-width : 456px ){
+    /* For mobile phones: */
+    
+	body {
+ 
+	 position: absolute;
+	right:-8%;
+	left:-10%;
+	margin:auto;
+    }
+#media {
+	 top: 10%;
+	}
 }
