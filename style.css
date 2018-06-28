@@ -101,11 +101,11 @@ body {
 }
 
 #div1 {
-	 display: none;
+	
 	float: left;
     position: absolute;
     z-index: 9;
-	margin-top: -95%;
+	
 }
 
 #div1header {

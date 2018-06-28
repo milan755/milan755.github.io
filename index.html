@@ -76,6 +76,7 @@ function dragElement(elmnt) {
   function dragMouseDown(e) {
     e = e || window.event;
     e.preventDefault();
+	
     // get the mouse cursor position at startup:
     pos3 = e.clientX;
     pos4 = e.clientY;
@@ -95,6 +96,7 @@ function dragElement(elmnt) {
     // set the element's new position:
     elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
     elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+	  
   }
 
   function closeDragElement() {
@@ -106,7 +108,8 @@ function dragElement(elmnt) {
 </script>	
 		<script>
 			function myFunction() {
-    var x = document.getElementById("div1");
+    var x = document.getElementById("div1").style.color = "blue";
+;
     if (x.style.display === "none") {
         x.style.display = "block";
     } else {
