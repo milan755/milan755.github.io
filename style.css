@@ -101,7 +101,7 @@ body {
 }
 
 #div1 {
-	
+	 display: none;
 	float: left;
     position: absolute;
     z-index: 9;
