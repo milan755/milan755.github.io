@@ -271,13 +271,14 @@ user-select: none; /* Standard */
 	 top: 4%;
 	left:1%;
 	}
-#div2 {
+	#div2 {
 	top: 4%;
 	left:1%;
 	
 	}
-	.langswitch {
-		margin-top:5px;
-		top: 2%;
+.langswitch {
+		margin-top:-10px;
+
+		top: 1px;
 	}	
 }
