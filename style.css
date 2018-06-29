@@ -203,7 +203,7 @@ user-select: none; /* Standard */
 		
     }
 	#div1 {
-	 top: 10%;	
+	 top: 15%;	
 		left:1px;
 	}
 	#div2 {
@@ -245,12 +245,12 @@ user-select: none; /* Standard */
 	margin:auto;
     }
 #div1 {
-	 top: 0px;
-	left:0px;
+	top: 15%;
+	left:15%;
 	}
 #div2 {
-	 top:0px;
-	left:0px;
+	top: 15%;
+	left:15%;	
 	margin:auto;
 	}
 }
@@ -268,12 +268,12 @@ user-select: none; /* Standard */
 	margin:auto;
     }
 #div1 {
-	 top: 0px;
-	left:0px;
+	 top: 15%;
+	left:15%;
 	}
 #div2 {
-	 top:0px;
-	left:0px;
+	top: 15%;
+	left:15%;
 	margin:auto;
 	}
 }
