@@ -285,8 +285,8 @@ user-select: none; /* Standard */
 	body {
  
 	 position: absolute;
-	right:-8%;
-	left:-10%;
+	right:-8px;
+	left:-10px;
 	margin:auto;
     }
 #div1 {
