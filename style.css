@@ -258,52 +258,22 @@ user-select: none; /* Standard */
     /* For mobile phones: */
     .xbutton {
 	border-radius: 10px;
-    padding: 20px 50px;
-		margin:auto;
-	}
-	.about {
-	border-radius: 10px;
-    padding: 10px 1px;
-	max-width: 220px;
-	min-width: 60px;
-	min-length: 10px;
-	max-length: 10px;
-	margin-left: 2;
-	
-	
-
-
-}
-	.paragraph1 {
-	border-radius: 10px;
-    padding: 0.50px 0px;
-	padding-left: 5px;
-	
-	margin-top:10px;
-	margin-left: 15%;
+    padding: 20px 180px;
 	}
 	body {
  
 	 position: absolute;
-	right:-8px;
-	left:-10px;
+	right:-8%;
+	left:-10%;
 	margin:auto;
     }
 #div1 {
-	max-width: 200px;
-	min-width: 60px;
-	min-length: 100px;
-	max-length: 100px;
 	 top: 0px;
 	left:0px;
-	margin-top:10px;
-	margin-bottom:1000px;
-	margin-left: 10px;
-	margin-right:10px;
 	}
 #div2 {
 	 top:0px;
-	left:20px;
+	left:0px;
 	margin:auto;
 	}
 }
