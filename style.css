@@ -207,7 +207,7 @@ user-select: none; /* Standard */
 		left:1px;
 	}
 	#div2 {
-	 top: 10%;	
+	 top: 15%;	
 		left:1px;
 	}
 }
@@ -246,11 +246,11 @@ user-select: none; /* Standard */
     }
 #div1 {
 	top: 8%;
-	left:15%;
+	left:1px;
 	}
 #div2 {
 	top: 8%;
-	left:15%;	
+	left:1px;	
 	margin:auto;
 	}
 }
@@ -269,11 +269,14 @@ user-select: none; /* Standard */
     }
 #div1 {
 	 top: 4%;
-	left:15%;
+	left:1px;
 	}
 #div2 {
 	top: 4%;
-	left:15%;
+	left:1px;
 	margin:auto;
 	}
+	.langswitch {
+		margin-top:7%;
+	}	
 }
