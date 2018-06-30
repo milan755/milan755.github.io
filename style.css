@@ -70,11 +70,11 @@ user-select: none; /* Standard */
 }
 
 .allbuttons:hover {
-background-color: #2B2224;
+background-color: #282025;
 color: #EA3661;
 }
 .allbuttons:active {
-  background-color: #33292B;
+  background-color: #211B1D;
 color: #E84F7B;
 transform:scale(0.95,0.95);
 }
@@ -317,8 +317,4 @@ body {
   animation: barberpole 50s linear infinite;
 }
 
-@keyframes barberpole {
-  100% {
-    background-position: 100% 100%;
-  }
-}
+
