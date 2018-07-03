@@ -70,7 +70,7 @@ user-select: none; /* Standard */
 }
 
 .allbuttons:hover {
-background-color: #282025;
+background-color: #702044;
 color: #EA3661;
 }
 .allbuttons:active {
@@ -284,8 +284,8 @@ user-select: none; /* Standard */
 	}	
 }
 .about,.buttons,.allbuttons,.langswitch, .xbutton, .paragraph1 {
-	background-color: #4C2333;
-	 color: #79D7DB;
+	background-color: #FD4C52;
+	 color: #293DA1;
 }
 .st0, .st1, .st2, .st3 {
 	stroke:#79D7DB;
@@ -297,24 +297,52 @@ user-select: none; /* Standard */
 .st5 {
 	fill:#4C2333;
 }
-body {
-	position: relative;
-    top: -30px; 
-    margin-bottom: -30px;
-  width: 300%;
-  height: 300%;
-	z-index: -1;
-  margin: 1rem auto;
-  background-image: 
-    repeating-linear-gradient(
-      -45deg, 
-      transparent, 
-      transparent 1rem,
-      #acc 1rem,
-      #acc 2rem
-    );
-  background-size: 600% 600%;
-  animation: barberpole 50s linear infinite;
+.overlay{
+  position:fixed;
+   background:url(background.png);
+  -webkit-animation:100s scroll infinite linear;
+  -moz-animation:100s scroll infinite linear;
+  -o-animation:100s scroll infinite linear;
+  -ms-animation:100s scroll infinite linear;
+  animation:100s scroll infinite linear;
+  top:0;
+  left:0;
+  width:100%;
+ height:100%;
+	 z-index: -10;
+}
+
+
+
+
+@-webkit-keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
+}
+
+@-moz-keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
+}
+
+@-o-keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
+}
+
+@-ms-keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
+}
+
+@keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
 }
 
 
