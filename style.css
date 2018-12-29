@@ -4,16 +4,20 @@ font-family: 'Raleway', sans-serif;
 }
 .main {
     height: 300px;
-    width: 400px;
+    width: 400px; 
    	position: absolute;
-	position: center;
+top: 50%; margin-top:-350px;
+        left: 50%; margin-left:-200px;
 	justify-content: center;
 	align-items: center;
 	align-content: center;
-	 margin-left: 35%;
+
+
 	overflow: visible;
 }
-
+	.mainthing {
+margin-left: 35%;
+}
 
 
 
@@ -41,7 +45,29 @@ font-family: 'Raleway', sans-serif;
 user-select: none; /* Standard */
 }
 
-
+.jpbuttons {
+	margin-left: 1px;
+	margin-top: 20px;
+	margin: 2%;
+	 background-color: #000000;
+    border: none;
+    color: #EE2148;
+	border-radius: 20px;
+    padding: 35px;
+	width: 180px;
+	min-width: 100px;
+	font-weight: bold;
+	font-family: "Raleway";
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+	float:left;
+	float:right;
+	-webkit-user-select: none; /* Safari */        
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+/Edge */
+user-select: none; /* Standard */
+}
 
 .langswitch{
 	
@@ -159,9 +185,7 @@ transform:scale(0.95,0.95);
 	margin-top: 25%;
 	
 	}
-	.mainthing {
 
-}
 }
 @media only screen and (max-width : 380px ){
     /* For mobile phones: */
