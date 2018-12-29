@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'Roboto', sans-serif;
+font-family: 'Raleway', sans-serif;
+}
 .buttons {
 	margin-left: 1px;
 
@@ -10,7 +14,7 @@
 	width: 20px;
 	min-width: 100px;
 	font-weight: bold;
-	font-family: "Corbel";
+	font-family: "Raleway";
     text-align: center;
     font-size: 25px;
     cursor: pointer;
@@ -21,7 +25,7 @@
 user-select: none; /* Standard */
 }
 .paragraph {
-		font-family: "Corbel";
+		font-family: "Raleway";
 	text-align: center;
 	    font-size: 30px;
 	margin-left: 20%;
@@ -33,7 +37,7 @@ user-select: none; /* Standard */
 
 
 	font-weight: bold;
-	font-family: "Corbel";
+	font-family: "Roboto";
     text-align: center;
     font-size: 30px;
 
