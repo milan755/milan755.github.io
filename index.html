@@ -19,9 +19,10 @@
 <script src="svg-injector.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1, user-scalable=0,user-scalable=no,target-densitydpi=device-dpi">
 <meta name="viewport" content="width=device-360, initial-scale=0.9 maximum-scale=0.9, user-scalable=0,user-scalable=no,target-densitydpi=device-dpi">
+<meta name="viewport" content="width=device-375, initial-scale=0.4 maximum-scale=0.4, user-scalable=0,user-scalable=no,target-densitydpi=device-dpi">
 <title>Milan Cline</title>
 </head>
-<html>
+<html type="mainthing">
 	<div>
 <button type="button" class="langswitch allbuttons float1" onclick="setLanguage('en')">ENG</button>
 <button type="button" class="langswitch allbuttons float2"  onclick="setLanguage('jp')">JP</button>
@@ -69,158 +70,8 @@
 </div>
 <html>
 
-<div id="div1">
-	  <div id="div1header" class="about float1">About</div>
-	<div type="button" class="paragraph1">
-		<p>Hello this a test please do not worry I have this all under control I swear one of these days I'll actually have this website done mark my words</p>
-		<div > <button type="button" class="xbutton" onclick="myFunction()">X</button> </div>
-		
-	</div>
-</div>
-
-	<div id="div2">
-	  <div id="div2header" class="about ">Contact</div>
-	<div type="button" class="paragraph1 float2">
-		<a href="cmilanillstr@gmail.com" target="_top">cmilanillstr@gmail.com</a>
-		<div > <button type="button" class="xbutton" onclick="myFunction2()">X</button> </div>
-	</div>
-</div>	
-<div id="darkness" class="square">
-	
-	</div>
-
 <div class="overlay">
 	</div>
 		
-<script>
-//Make the DIV element draggagle:
-dragElement(document.getElementById("div1"));
 
-function dragElement(elmnt) {
-  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-  if (document.getElementById(elmnt.id + "div1header")) {
-    /* if present, the header is where you move the DIV from:*/
-    document.getElementById(elmnt.id + "div1header").onmousedown = dragMouseDown;
-  } else {
-    /* otherwise, move the DIV from anywhere inside the DIV:*/
-    elmnt.onmousedown = dragMouseDown;
-  }
-
-  function dragMouseDown(e) {
-    e = e || window.event;
-    e.preventDefault();
-	
-    // get the mouse cursor position at startup:
-    pos3 = e.clientX;
-    pos4 = e.clientY;
-    document.onmouseup = closeDragElement;
-    // call a function whenever the cursor moves:
-    document.onmousemove = elementDrag;
-  }
-
-  function elementDrag(e) {
-    e = e || window.event;
-    e.preventDefault();
-    // calculate the new cursor position:
-    pos1 = pos3 - e.clientX;
-    pos2 = pos4 - e.clientY;
-    pos3 = e.clientX;
-    pos4 = e.clientY;
-    // set the element's new position:
-    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
-	  
-  }
-
-  function closeDragElement() {
-    /* stop moving when mouse button is released:*/
-    document.onmouseup = null;
-    document.onmousemove = null;
-  }
-}
-</script>	
-		<script>
-			function myFunction() {
-    var x = document.getElementById("div1");
-	var y = document.getElementById("darkness");			
-;
-    if (x.style.display === "block") {
-        x.style.display = "none";
-		y.style.display === "block" 
-        y.style.display = "none";
-
-    } else {
-        x.style.display = "block";
-		y.style.display = "block";
-	
-		
-    }
-}
-		</script>
-	
-	
-<script>
-//Make the DIV element draggagle:
-dragElement(document.getElementById("div2"));
-
-function dragElement(elmnt) {
-  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-  if (document.getElementById(elmnt.id + "div2header")) {
-    /* if present, the header is where you move the DIV from:*/
-    document.getElementById(elmnt.id + "div2header").onmousedown = dragMouseDown;
-  } else {
-    /* otherwise, move the DIV from anywhere inside the DIV:*/
-    elmnt.onmousedown = dragMouseDown;
-  }
-
-  function dragMouseDown(e) {
-    e = e || window.event;
-    e.preventDefault();
-	
-    // get the mouse cursor position at startup:
-    pos3 = e.clientX;
-    pos4 = e.clientY;
-    document.onmouseup = closeDragElement;
-    // call a function whenever the cursor moves:
-    document.onmousemove = elementDrag;
-  }
-
-  function elementDrag(e) {
-    e = e || window.event;
-    e.preventDefault();
-    // calculate the new cursor position:
-    pos1 = pos3 - e.clientX;
-    pos2 = pos4 - e.clientY;
-    pos3 = e.clientX;
-    pos4 = e.clientY;
-    // set the element's new position:
-    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
-	  
-  }
-
-  function closeDragElement() {
-    /* stop moving when mouse button is released:*/
-    document.onmouseup = null;
-    document.onmousemove = null;
-  }
-}
-</script>	
-		<script>
-			function myFunction2() {
-    var x = document.getElementById("div2");
-	var y = document.getElementById("darkness");
-;
-    if (x.style.display === "block") {
-        x.style.display = "none";
-		y.style.display === "block" 
-        y.style.display = "none";
-    } else {
-        x.style.display = "block";
-		y.style.display = "block";
-    }
-}
-		</script>	
-
-	
 </html>	
