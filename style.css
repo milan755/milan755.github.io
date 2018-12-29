@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'Corbel';
+  src: url('Corbel.eot'); /* IE9 Compat Modes */
+  src: url('Corbel.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Corbel.woff2') format('woff2'), /* Super Modern Browsers */
+       url('Corbel.woff') format('woff'), /* Pretty Modern Browsers */
+       url('Corbel.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Corbel.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
 .main {
     height: 300px;
     width: 400px;
