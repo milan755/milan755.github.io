@@ -161,22 +161,15 @@ user-select: none; /* Standard */
 
 div.gallery {
   border: 10px solid #ccc;
-	border-radius: 25;
-	font-family: "Raleway";
-   flex: 75%;
-    max-width: 75%;
-  padding: 0 5px;
 }
 
 div.gallery:hover {
-  border: 10px solid #777;
-	border-radius: 25;
+  border: 15px solid #777;
 }
 
 div.gallery img {
   width: 100%;
   height: auto;
-	border-radius: 25;
 }
 
 div.desc {
