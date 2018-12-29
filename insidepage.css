@@ -31,6 +31,14 @@ user-select: none; /* Standard */
 	margin-left: 20%;
 	margin-right: 20%;
 }
+.hack {
+	font-size: 15px;
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */      
+	visibility: hidden;
+}
 .title {
 	
     color: #FD4C52;
@@ -38,6 +46,21 @@ user-select: none; /* Standard */
 
 	font-weight: bold;
 	font-family: "Roboto";
+    text-align: center;
+    font-size: 30px;
+
+	-webkit-user-select: none; /* Safari */        
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+/Edge */
+user-select: none; /* Standard */
+}
+.subtitle {
+	
+    color: #6E42DA;
+
+
+	font-weight: bold;
+	font-family: "Raleway";
     text-align: center;
     font-size: 30px;
 
@@ -134,4 +157,52 @@ user-select: none; /* Standard */
 		
 		transform: translatey(-2px);
 	}
+}
+
+div.gallery {
+  border: 10px solid #ccc;
+	border-radius: 25;
+	font-family: "Raleway";
+   flex: 75%;
+    max-width: 75%;
+  padding: 0 5px;
+}
+
+div.gallery:hover {
+  border: 10px solid #777;
+	border-radius: 25;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+	border-radius: 25;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
 }
