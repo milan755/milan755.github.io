@@ -1,11 +1,19 @@
+@font-face {
+  font-family: 'Roboto', sans-serif;
+font-family: 'Raleway', sans-serif;
+}
 .main {
     height: 300px;
     width: 400px;
-   	position: fixed;
-
-	float: left;
-
+   	position: absolute;
+	position: center;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	 margin-left: 35%;
+	overflow: visible;
 }
+
 
 
 
@@ -21,9 +29,9 @@
 	width: 180px;
 	min-width: 100px;
 	font-weight: bold;
-	font-family: "Corbel";
+	font-family: "Raleway";
     text-align: center;
-    font-size: 18px;
+    font-size: 25px;
     cursor: pointer;
 	float:left;
 	float:right;
@@ -83,93 +91,9 @@ transform:scale(0.95,0.95);
     background-color: #AFC6C5;
 }
 
-#div1 {
-display:none;
-	float: left;
-    position: absolute;
-    z-index: 9;
-	top: 30px;
-	left:200%;
-	-webkit-user-select: none; /* Safari */        
--moz-user-select: none; /* Firefox */
--ms-user-select: none; /* IE10+/Edge */
-user-select: none; /* Standard */
-}
 
-#div1header {
-	border-radius: 20px;
-	 padding: 10px;
-    cursor: move;
-	float:top;
-    z-index: 10;
-  max-width: 400px;
-	min-width: 300px; 
-	min-length: 50px;
-	max-length: 500px;
-	
-}	
-#div2 {
-display:none;
-	float: left;
-    position: absolute;
-    z-index: 9;
-    top: 30px;
-	left:200%;
--webkit-user-select: none; /* Safari */        
--moz-user-select: none; /* Firefox */
--ms-user-select: none; /* IE10+/Edge */
-user-select: none; /* Standard */
-}
 
-#div2header {
-	border-radius: 10px;
-	 padding: 10px;
-    cursor: move;
-	float:top;
-    z-index: 10;
-  
-	
-}	
-.xbutton {
-	border-radius: 20px;
-    padding: 20px 200px;
-	max-width: 100px;
-	min-width: 60px;
-	min-length: 80px;
-	max-length: 80px;
-	font-weight: bold;
-	font-family: "Corbel";
-    text-align: center;
-    font-size: 20px;
-	 background-color: #000000;
-    border: none;
-    color: #EE2148;
-	display:block;
-	margin-top: 40px;
-	
-	
-	
-}
-.paragraph1 {
-	border-radius: 20px;
-    padding: 0.50px 0px;
-	max-width: 500px;
-	min-width: 300px; 
-	min-length: 50px;
-	max-length: 500px;
-	font-family: "Corbel";
-    text-align: center;
-    font-size: 15px;
-	 background-color: #000000;
-    border: none;
-    color: #FE2148;
-	margin-top:10px;
-	margin-bottom:1000px;
-	margin-left: 10px;
-	margin-right:10px;
-	
 
-}
 .about {
 	border-radius: 20px;
     padding: 20px 1px;
@@ -191,26 +115,9 @@ user-select: none; /* Standard */
 
 @media only screen and (max-width : 674px ){
 	/* For mobile phones: */
-	.xbutton {
-
-    padding: 20px 180px;
-	}
-    body {
- 
-	 position: absolute;
-	right:8%;
-	left:5%;
-	margin:auto;
-		
-    }
-	#div1 {
-	 top: 15%;	
-		left:1px;
-	}
-	#div2 {
-	 top: 15%;	
-		left:1px;
-	}
+	.main {
+	margin-left: 10%;
+}
 }
 .square{
 
@@ -234,55 +141,43 @@ user-select: none; /* Standard */
 
 @media only screen and (max-width : 456px ){
     /* For mobile phones: */
-    .xbutton {
+.main {
+	margin-left: 10%;
+}
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+.main {
+	margin-left: 25%;
+	margin-top: 17%;
 
-    padding: 20px 180px;
+}
+}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px){
+
+	.main {
+	margin-left: 32%;
+	margin-top: 25%;
+	
 	}
-	body {
- 
-	 position: absolute;
-	right:-8%;
-	left:-10%;
-	margin:auto;
-    }
-#div1 {
-	top: 8%;
-	left:1px;
-	}
-#div2 {
-	top: 8%;
-	left:1px;	
-	margin:auto;
-	}
+	.mainthing {
+
+}
 }
 @media only screen and (max-width : 380px ){
     /* For mobile phones: */
-    .xbutton {
-	
-    padding: 20px 180px;
-	}
-	body {
- 
-	 position: absolute;
-	right:-8%;
-	left:-10%;
-	margin:auto;
-    }
-#div1 {
-	 top: 4%;
-	left:1%;
-	}
-	#div2 {
-	top: 4%;
-	left:1%;
-	
-	}
-.langswitch {
+  
+.main {
+  
+	margin-left: 8%;
+}
+	.langswitch {
 		margin-top:-10px;
 
 		top: 1px;
 	}	
-}
+	}
+
+
 .about,.buttons,.allbuttons,.langswitch, .xbutton, .paragraph1 {
 	background-color: #FD4C52;
 	 color: #293DA1;
