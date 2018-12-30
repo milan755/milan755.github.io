@@ -169,60 +169,55 @@ user-select: none; /* Standard */
 		transform: translatey(-2px);
 	}
 }
-/* Center website */
-.main {
-  max-width: 1000px;
-  margin: auto;
+
+div.gallery {
+	border-radius: 12px;
+  border: 10px solid #ccc;
+	
 }
 
-h1 {
-  font-size: 50px;
-  word-break: break-all;
+div.gallery:hover {
+  border: 15px solid #777;
 }
 
-.row {
-  margin: 8px -16px;
+div.gallery img {
+  width: 100%;
+  height: auto;
+	border-radius: 12px;
+	padding: 20px;
 }
 
-/* Add padding BETWEEN each column */
-.row,
-.row > .column {
-  padding: 8px;
+div.desc {
+  padding: 15px;
+  text-align: center;
 }
 
-/* Create four equal columns that floats next to each other */
-.column {
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+	border-radius: 12px;
+  padding: 0 6px;
   float: left;
-  width: 25%;
+  width: 24.99999%;
+	margin-top: 20px;
+		margin-bottom: 20px;
+	
 }
 
-/* Clear floats after rows */ 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Content */
-.content {
-  background-color: white;
-  padding: 10px;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-  .column {
-    width: 50%;
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
   }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 49.9999%;
   }
 }
-
 .art {
 margin-top: 20px;
 		margin-bottom: 20px;
