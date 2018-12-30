@@ -15,88 +15,31 @@
 	 <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1, user-scalable=0,user-scalable=no,target-densitydpi=device-dpi">
 <meta name="viewport" content="width=device-360, initial-scale=0.9 maximum-scale=0.9, user-scalable=0,user-scalable=no,target-densitydpi=device-dpi">
 <meta name="viewport" content="width=device-360, initial-scale=0.8 maximum-scale=0.8, user-scalable=0,user-scalable=no,target-densitydpi=device-dpi">
+	  <script src="jquery-3.3.1.min.js"></script>
 	</head>
 	<link href="./insidepage.css" type="text/css" rel="stylesheet">
   <body>
 	  <button type="button" class="buttons allbuttons float1"  onclick="window.location.href='./index.html'">Back</button>
-	    
+		<button onclick="topFunction()" id="upbutton" title="Go to top">Top</button>    
 			<div class="title">
     <h1>Work</h1>
 	</div>
-
-	
-					
-			<div class="subtitle">
-    			<h2>Art</h2>
-			</div>
+	<div class="paragraph">
+	  <p>Hello, these are some of the works I've done over the years. Click on an image to get the full-size resolution</p>
+	  </div>
+	  <div class="optionbuttons">
+	 <button type="button" class="buttons allbuttons float1"  onclick="alert('But It&#8217s right there...' )">Art</button>
+	 <button type="button" class="buttons allbuttons float2"  onclick="window.location.href=http://milancline.com/work.html#videos">videos</button>
+	 <button type="button" class="buttons allbuttons float1"  onclick="window.location.href=http://milancline.com/work.html#sketches">Sketches</button>
+	  </div>
+			
  <style>
 * {
   box-sizing: border-box;
+
 }
 
-body {
-  background-color: #f1f1f1;
-  padding: 20px;
-  font-family: Arial;
-}
 
-/* Center website */
-.main {
-  max-width: 1000px;
-  margin: auto;
-}
-
-h1 {
-  font-size: 50px;
-  word-break: break-all;
-}
-
-.row {
-  margin: 8px -16px;
-}
-
-/* Add padding BETWEEN each column */
-.row,
-.row > .column {
-  padding: 8px;
-}
-
-/* Create four equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 25%;
-}
-
-/* Clear floats after rows */ 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Content */
-.content {
-  background-color: white;
-  padding: 10px;
-
-  outline-style: solid;
-  outline-color: gray;	
-	outline-width: 4px;	
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-  .column {
-    width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
 </style>
 
 <body>
@@ -105,121 +48,163 @@ h1 {
 
 
 <!-- Portfolio Gallery Grid -->
+<div id="art">	
+	<div class="subtitle">
+    			<h2>Art</h2>
+			</div>
 <div class="row">
-  <div class="column">
-    <div class="content">
-      <img src="work/icon/bird_icon.png" alt="Mountains" style="width:100%">
-      <h3>My Work</h3>
-      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+  
+	<div class="column">
+    <div class="content float1">
+		<a target="_blank" href="work/light.jpg">
+      <img src="work/icon/light_icon.png" alt="art" style="width:100%">
+		</a>
+      <p>Cat Lights (2016) <br>
+		Pencil</p>
     </div>
   </div>
   <div class="column">
-    <div class="content">
-    <img src="work/icon/bird_icon.png" alt="Nature" style="width:100%">
+    <div class="content float2">
+		<a target="_blank" href="work/ink_on_glass.jpeg">
+    <img src="work/icon/ink_on_glass_icon.png" alt="art" style="width:100%">
+		</a>
     
-      <h3>My Work</h3>
-      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+      <p>Grim Patch (2017) <br>Ink On Glass</p>
     </div>
   </div>
   <div class="column">
-    <div class="content">
-    <img src="work/icon/bird_icon.png" alt="Nature" style="width:100%">
-      <h3>My Work</h3>
-      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    <div class="content float1">
+    <a target="_blank" href="work/comfyobjects.jpg">
+    <img src="work/icon/comfyobjects_icon.png" alt="art" style="width:100%">
+		</a>
+     
+      <p>Comfy Objects (2018) <br> Oil Paint</p>
     </div>
   </div>
   <div class="column">
-    <div class="content">
-		<a target="_blank" href="work/bird.png">
-    <img src="work/icon/bird_icon.png" alt="Mountains" style="width:100%">
-			</a>
-      <h3>My Work</h3>
-      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    <div class="content float2">
+		<a target="_blank" href="work/theartist.png">
+    <img src="work/icon/theartist_icon.png" alt="art" style="width:100%">
+		</a>
+      <p>Manipulation (2018) <br> Photoshop with Polygonal tool and Paint Bucket </p>
     </div>
   </div>
 <div class="column">
     <div class="content">
-		<a target="_blank" href="work/bird.png">
-    <img src="work/icon/bird_icon.png" alt="Mountains" style="width:100%">
-			</a>
-      <h3>My Work</h3>
-      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+		<a target="_blank" href="work/the_blues.jpg">
+    <img src="work/icon/the_blues_icon.png" alt="art" style="width:100%">
+		</a>
+  <p>The Blues (2018) <br>
+	  Oil paint</p>
     </div>
   </div>
+<div class="column">
+    <div class="content float1">
+		<a target="_blank" href="work/okay.jpg">
+    <img src="work/icon/okay_icon.png" alt="art" style="width:100%">
+		</a>
+  <p>Okay (2016) <br>
+	  Blender and Adobe Illustrator</p>
+    </div>
+  </div>	
+<div class="column">
+    <div class="content float2">
+		<a target="_blank" href="work/cornerned_lamp.jpg">
+    <img src="work/icon/cornerned_lamp_icon.png" alt="art" style="width:100%">
+		</a>
+  <p>Cornered Lamp (2018) <br>
+	  Charcoal</p>
+    </div>
+  </div>
+	<div class="column">
+    <div class="content float1">
+		<a target="_blank" href="work/bird.png">
+    <img src="work/icon/bird_icon.png" alt="art" style="width:100%">
+		</a>
+  <p>Cornered Lamp (2018) <br>
+	  Charcoal</p>
+    </div>
+  </div>
+	</div>
 </div>
 
-
-<!-- END MAIN -->
-
+<div id="video">
 	<div class="subtitle">
     			<h2>Videos</h2>
 			</div>
 	<div class="row">
+		
   <div class="column">
-    <div class="content">
-      <img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">
-      <h3>My Work</h3>
-      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    <div class="content float2">
+		<video width="250" height="240" controls loop>
+		<source src="work/rotofruit.mp4" type="video/mp4">
+		</video>
+  <p>Rotofruit (2018) <br>
+	  Rotoscopped with Photoshop and masking</p>
     </div>
   </div>
+		
   <div class="column">
-    <div class="content">
-    <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
-      <h3>My Work</h3>
-      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    <div class="content float1">
+		<video width="250" height="240" controls loop>
+		<source src="work/bluespin.mp4" type="video/mp4">
+		</video>
+  <p>Bluespin (2018) <br>
+	  Adobe Aftereffects</p>
     </div>
   </div>
-  <div class="column">
-    <div class="content">
-    <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
-      <h3>My Work</h3>
-      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
-    </div>
-  </div>
-  <div class="column">
-    <div class="content">
-    <img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">
-      <h3>My Work</h3>
-      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
-    </div>
-  </div>
+  
 
 </div>
+	</div>
+	
+	<div id="sketches">
 	<div class="subtitle">
     			<h2>Sketches</h2>
 			</div>
 	<div class="row">
+  
   <div class="column">
-    <div class="content">
-      <img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">
-      <h3>My Work</h3>
-      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    <div class="content float1">
+		<a target="_blank" href="work/usagi.jpg">
+      <img src="work/icon/usagi_icon.png" alt="art" style="width:100%">
+		</a>
+      <p>Rabbits (2018) <br>
+		Ink Rabbits</p>
     </div>
   </div>
   <div class="column">
-    <div class="content">
-    <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
-      <h3>My Work</h3>
-      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    <div class="content float2">
+		<a target="_blank" href="work/sketchcollection.png">
+    <img src="work/icon/sketchcollection_icon.png" alt="art" style="width:100%">
+		</a>
+    
+      <p>Grim Patch (2017) <br>Ink On Glass</p>
     </div>
   </div>
+<div class="column">
+    <div class="content float1">
+		<a target="_blank" href="work/sketchesforcharacterassignmen.png">
+    <img src="work/icon/sketchesforcharacterassignment_icon.png" alt="art" style="width:100%">
+		</a>
+      <p>Manipulation (2018) <br> Photoshop with Polygonal tool and Paint Bucket </p>
+    </div>
+  </div>
+		
   <div class="column">
-    <div class="content">
-    <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
-      <h3>My Work</h3>
-      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    <div class="content float2">
+    <a target="_blank" href="work/2peoplesketch.png">
+    <img src="work/icon/2peoplesketch_icon.png" alt="art" style="width:100%">
+		</a>
+     
+      <p>Comfy Objects (2018) <br> Oil Paint</p>
     </div>
   </div>
-  <div class="column">
-    <div class="content">
-    <img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">
-      <h3>My Work</h3>
-      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
-    </div>
-  </div>
-
+  
+		</div>
 </div>
-</body>
+
+	  </body>
 						
 
 	   
@@ -253,4 +238,20 @@ a:active {
   text-decoration: underline;
 }
 </style>
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("upbutton").style.display = "block";
+  } else {
+    document.getElementById("upbutton").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+</script>	
 </html>
