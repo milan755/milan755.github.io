@@ -51,6 +51,8 @@ transform:scale(0.95,0.95);
 	    font-size: 25px;
 	margin-left: 15%;
 	margin-right: 15%;
+	margin-bottom: 50px;
+
 }
 .hack {
 	font-size: 15px;
@@ -342,11 +344,13 @@ img {
 	  font-size: 25px;
 	background-color: #FD4C52;
 	 color: #293DA1;
+		margin-bottom:75px;
 
 }
 .optionbuttons:hover {
 background-color: #702044;
 color: #EA3661;
+
 }
 .optionbuttons:active {
   background-color: #211B1D;
