@@ -330,9 +330,33 @@ img {
   }
 }
 .optionbuttons {
-	 text-align: center
+	 width: 50%;
+	 padding: 10px;
+	border-radius: 20px;
+  	text-decoration: none;
+	min-width: 200px;
+	min-height: 200px;
+	font-weight: bold;
+	font-family: "Raleway";
+    text-align: center;
+	  font-size: 25px;
+	background-color: #FD4C52;
+	 color: #293DA1;
+
 }
-#upbutton {
+.optionbuttons:hover {
+background-color: #702044;
+color: #EA3661;
+}
+.optionbuttons:active {
+  background-color: #211B1D;
+color: #E84F7B;
+transform:scale(0.95,0.95);
+}
+.options {
+	 text-align: center;
+}
+.upbutton {
   display: none;
   position: fixed;
   bottom: 20px;
@@ -341,9 +365,13 @@ img {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: red;
-  color: white;
+  background-color: #FD4C52;
+	 color: #293DA1;
   cursor: pointer;
   padding: 15px;
-  border-radius: 4px;
+  border-radius: 20px;
+	opacity: 0.5;
+}
+.upbutton:hover {
+  background-color: #555;
 }

@@ -20,17 +20,19 @@
 	<link href="./insidepage.css" type="text/css" rel="stylesheet">
   <body>
 	  <button type="button" class="buttons allbuttons float1"  onclick="window.location.href='./index.html'">Back</button>
-		<button onclick="topFunction()" id="upbutton" title="Go to top">Top</button>    
-			<div class="title">
+		<button onclick="topFunction()" class="upbutton" title="Go to top">Top</button>    
+			<div id="title" class="title">
     <h1>Work</h1>
 	</div>
 	<div class="paragraph">
-	  <p>Hello, these are some of the works I've done over the years. Click on an image to get the full-size resolution</p>
+	  <p>Hello, these are some of the works I've done over the years. Click on an image to get the full-size resolution. I also have more works on my <a href="https://www.behance.net/mcline0128a9">Behance</a>, those go into a bit more detail so please check that out when you can</p>
 	  </div>
-	  <div class="optionbuttons">
-	 <button type="button" class="buttons allbuttons float1"  onclick="alert('But It&#8217s right there...' )">Art</button>
-	 <button type="button" class="buttons allbuttons float2"  onclick="window.location.href=http://milancline.com/work.html#videos">videos</button>
-	 <button type="button" class="buttons allbuttons float1"  onclick="window.location.href=http://milancline.com/work.html#sketches">Sketches</button>
+	<div class="options">
+		<a type="button" class="optionbuttons" href="#"  onclick="alert('But It&#8217s right there...' )">Art</a>
+	 
+	 <a role="button" class="optionbuttons" href="#videos">Videos</a>
+	
+	 <a role="button" class="optionbuttons" href="#sketches">Sketches</a>
 	  </div>
 			
  <style>
@@ -121,14 +123,14 @@
 		<a target="_blank" href="work/bird.png">
     <img src="work/icon/bird_icon.png" alt="art" style="width:100%">
 		</a>
-  <p>Cornered Lamp (2018) <br>
-	  Charcoal</p>
+  <p>Bird (2018) <br>
+	  Adobe Illustrator</p>
     </div>
   </div>
 	</div>
 </div>
 
-<div id="video">
+<div id="videos">
 	<div class="subtitle">
     			<h2>Videos</h2>
 			</div>
@@ -212,46 +214,8 @@
 	</div>
 		
   </body>
-	<style>
-		
-a:link {
-  color: hotpink; 
-  background-color: transparent; 
-  text-decoration: none;
-}
 
-a:visited {
-  color: deeppink;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:hover {
-  color: blueviolet;
-  background-color: transparent;
-  text-decoration: underline;
-}
-
-a:active {
-  color: darkviolet;
-  background-color: transparent;
-  text-decoration: underline;
-}
-</style>
 <script>
-window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("upbutton").style.display = "block";
-  } else {
-    document.getElementById("upbutton").style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 </script>	
 </html>
