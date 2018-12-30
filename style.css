@@ -58,9 +58,9 @@ user-select: none; /* Standard */
 	width: 180px;
 	min-width: 100px;
 	font-weight: bold;
-	font-family: "a-otf-midashi-go-mb31-pr6n";
+	font-family: "roboto";
     text-align: center;
-    font-size: 22px;
+    font-size: 19px;
     cursor: pointer;
 	float:left;
 	float:right;
