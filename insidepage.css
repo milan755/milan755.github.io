@@ -1,0 +1,381 @@
+@font-face {
+  font-family: 'Roboto', sans-serif;
+font-family: 'Raleway', sans-serif;
+}
+.buttons {
+	margin-left: 3px;
+
+	margin: 1%;
+	 background-color: #FD4C52;
+    border: none;
+    color: #293DA1;
+	border-radius: 20px;
+    padding: 10px;
+	width: 20px;
+	min-width: 150px;
+	min-height: 70px;
+	font-weight: bold;
+	font-family: "Raleway";
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+
+	-webkit-user-select: none; /* Safari */        
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+/Edge */
+user-select: none; /* Standard */
+}
+
+.allbuttons {
+	
+	 
+ -webkit-transition-duration: 0.5s; /* Safari */
+   transition-duration: 0.5s;
+	
+
+}
+
+.allbuttons:hover {
+background-color: #702044;
+color: #EA3661;
+}
+.allbuttons:active {
+  background-color: #211B1D;
+color: #E84F7B;
+transform:scale(0.95,0.95);
+}
+
+.paragraph {
+		font-family: "Raleway";
+	text-align: center;
+	    font-size: 25px;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-bottom: 50px;
+
+}
+.hack {
+	font-size: 15px;
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */      
+	visibility: hidden;
+}
+.hack2 {
+	font-size: 30px;
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */      
+	visibility: hidden;
+}
+.title {
+	
+    color: #FD4C52;
+
+
+	font-weight: bold;
+	font-family: "Roboto";
+    text-align: center;
+    font-size: 30px;
+
+	-webkit-user-select: none; /* Safari */        
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+/Edge */
+user-select: none; /* Standard */
+}
+.subtitle {
+	border-width: 100%;
+    color: #6E42DA;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: center;
+	font-weight: bold;
+	font-family: "Raleway";
+    text-align: center;
+    font-size: 30px;
+
+
+	-webkit-user-select: none; /* Safari */        
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+/Edge */
+user-select: none; /* Standard */
+}
+
+.overlay{
+  position:fixed;
+   background:url(background.png);
+  -webkit-animation:100s scroll infinite linear;
+  -moz-animation:100s scroll infinite linear;
+  -o-animation:100s scroll infinite linear;
+  -ms-animation:100s scroll infinite linear;
+  animation:100s scroll infinite linear;
+  top:0;
+  left:0;
+  width:100%;
+ height:100%;
+	 z-index: -10;
+}
+
+
+
+
+@-webkit-keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
+}
+
+@-moz-keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
+}
+
+@-o-keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
+}
+
+
+@keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
+}
+
+.float1 {
+	
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+	
+}
+
+@keyframes float {
+	0% {
+		
+		transform: translatey(2px);
+	}
+	50% {
+	
+		transform: translatey(-2px);
+	}
+	100% {
+		
+		transform: translatey(2px);
+	}
+	
+
+}
+
+.float2 {
+	
+	transform: translatey(0px);
+	animation: float2 6s ease-in-out infinite;
+
+}
+
+@keyframes float2 {
+	0% {
+		
+		transform: translatey(-2px);
+	}
+	50% {
+	
+		transform: translatey(2px);
+	}
+	100% {
+		
+		transform: translatey(-2px);
+	}
+}
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+
+  padding: 10px;
+		border-radius: 50px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.art {
+margin-top: 20px;
+		margin-bottom: 20px;
+}
+.sketches {
+margin-top: 20px;
+margin-bottom: 20px;
+	
+}
+.videos {
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+	
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 16px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+	height: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: hsla(0, 0%, 0%, 0);
+  padding: 15px;
+  text-align: center;
+  border: 8px solid gray;	
+border-radius: 55px;
+	
+}
+.content {
+ margin-left:center;
+	
+}
+img {
+  border-radius: 5px;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 50%;
+  }
+}
+.optionbuttons {
+	 width: 50%;
+	 padding: 10px;
+	border-radius: 20px;
+  	text-decoration: none;
+	min-width: 200px;
+	min-height: 200px;
+	font-weight: bold;
+	font-family: "Raleway";
+    text-align: center;
+	  font-size: 25px;
+	background-color: #FD4C52;
+	 color: #293DA1;
+		margin-bottom:75px;
+
+}
+.optionbuttons:hover {
+background-color: #702044;
+color: #EA3661;
+
+}
+.optionbuttons:active {
+  background-color: #211B1D;
+color: #E84F7B;
+transform:scale(0.95,0.95);
+}
+.options {
+	 text-align: center;
+}
+.upbutton {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #FD4C52;
+	 color: #293DA1;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 20px;
+	opacity: 0.5;
+}
+.upbutton:hover {
+  background-color: #555;
+}

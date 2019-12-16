@@ -1,0 +1,30 @@
+h1{
+  text-align: center;
+}
+.mainbutton {
+	color: black;
+ 	 border: 2px solid #3fa9f5;
+	
+	font-family:FranklinGothicLTPro-BkCm;
+	font-size: 40px;
+	padding-top: 10px;
+  	padding-right: 10px;
+ 	padding-bottom:3px;
+ 	padding-left: 10px;
+	
+	  display: flex;
+	src: url("fonts/FranklinGothic-BookCmpr.woff") format("woff")
+	
+
+}
+div {
+  display:flex;
+  justify-content:space-around;
+	white-space: nowrap;
+	
+}
+
+.logo {
+	src: url("fonts/FranklinGothic-BookCmpr.woff") format("woff")
+	
+}
