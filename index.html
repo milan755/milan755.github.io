@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" xml:lang="en">
 		<head>
+			<script src="js/three.min.js"></script>
 			<title>Milan Cline</title>
 			<meta charset="utf-8">
 			 <link rel="stylesheet" href="style.css">
 			<script src="js/three.min.js"></script>
-			<meta name="viewport" content="width=device-width, initial-scale=0.3 maximum-scale=0.5, user-scalable=0,user-scalable=no,target-densitydpi=device-dpi">
-<meta name="viewport" content="width=device-360, initial-scale=0.9 maximum-scale=0.9, user-scalable=0,user-scalable=no,target-densitydpi=device-dpi">
-<meta name="viewport" content="width=device-320, initial-scale=0.8 maximum-scale=0.8, user-scalable=0,user-scalable=no,target-densitydpi=device-dpi">
+			<meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86 user-scalable=no" />
 		</head>
 	
 <body>
@@ -17,17 +16,59 @@
     alt="Milan Cline"
     height="151.5"
     width="303" />
+	
 </h1>	
 	
 	<div>
 	
- 	<button type="button" class="b1 mainbutton">Work</button>
+ 	<button type="button" class="b1 mainbutton"> Work </button>
     <button type="button" class="b2 mainbutton">Contact</button>
     <button type="button" class="b3 mainbutton">About Me</button>
     <button type="button" class="b4 mainbutton">???</button>
 	
 	</div>
+	  <script>
+                   var camera, scene, renderer,
+    geometry, material, mesh;
+
+    init();
+    animate();
+
+    function init() {
+        scene = new THREE.Scene();
+
+        camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 10000 );
+        camera.position.z = 1000;
+
+        geometry = new THREE.BoxGeometry( 200, 200, 200 );
+        material = new THREE.MeshBasicMaterial( { color: 0xff0000, wireframe: false } );
+
+        mesh = new THREE.Mesh( geometry, material );
+        scene.add( mesh );
+
+        renderer = new THREE.WebGLRenderer();
+        renderer.setSize( window.innerWidth, window.innerHeight );
+		var renderer = new THREE.WebGLRenderer( { alpha: true } );
+
+
+        document.body.appendChild( renderer.domElement );
+    }
+
+    function animate() {
+        requestAnimationFrame( animate );
+        render();
+    }
+
+    function render() {
+        mesh.rotation.x += 0.01;
+        mesh.rotation.y += 0.02;
+
+        renderer.render( scene, camera );
 	
+    }
+
+        </script> 
+         
 </body>
 	
 	

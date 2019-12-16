@@ -4,16 +4,19 @@ h1{
 .mainbutton {
 	color: black;
  	 border: 2px solid #3fa9f5;
-	
-	font-family:FranklinGothicLTPro-BkCm;
-	font-size: 40px;
-	padding-top: 10px;
-  	padding-right: 10px;
- 	padding-bottom:3px;
- 	padding-left: 10px;
-	
-	  display: flex;
-	src: url("fonts/FranklinGothic-BookCmpr.woff") format("woff")
+	text-align: center;
+	font-family:ITCFranklinGothicBookCmpr;
+	font-size: 35px;
+	padding-top: 15px;
+  	padding-right: 15px;
+ 	padding-bottom:7px;
+ 	padding-left: 15px;
+	background-color: rgba(76, 175, 80, 0);
+	 
+	width: 135px;
+	length: 10px;
+	src: url("fonts/FranklinGothic-BookCmpr.woff") format("woff");
+
 	
 
 }
@@ -24,10 +27,7 @@ div {
 	
 }
 
-.logo {
-	src: url("fonts/FranklinGothic-BookCmpr.woff") format("woff");
-	
-}
+
 
 .b1:hover,.b2:hover,.b3:hover,.b4:hover {
 }html,body
@@ -37,4 +37,16 @@ div {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
+	
+}
+@font-face {
+  font-family: ITCFranklinGothicBookCmpr;
+  src: url("fonts/ITCFranklinGothicBookCmpr.woff");
+}
+@media (max-width: 1000px) {
+
+      html,body {
+            zoom: .7; 
+       }
+
 }
