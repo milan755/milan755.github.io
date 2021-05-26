@@ -55,8 +55,23 @@ div {
 
    width: 100%;
 	height: 100%;
-   display: block;
-	background-color: #FFF;
-             border: 10px solid red;
+background-color: azure;
+position:absolute;
+    border: 10px solid red;
+ 
+	z-index: 1;
+  display: block;
+	margin-top: -20%;
+}
+#layer1 {
+	z-index: 100;
+	display:block;
 
+}
+#relativelayer {
+	z-index: 100;
+	display:block;
+ 
+	 position: relative;
+	
 }
